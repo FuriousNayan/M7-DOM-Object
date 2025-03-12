@@ -1,4 +1,6 @@
 const divOne = document.getElementById('myDiv');
+let counter = 0;
+
 
 let headerOne = document.createElement('h1');
 headerOne.innerHTML = 'Welcome to DOM homework';
@@ -31,6 +33,10 @@ divOne.appendChild(buttonOne);
 
 buttonOne.addEventListener('click', function() {
     let newListItem = document.createElement('li');
-    newListItem.innerHTML = 'New List Item ';
+    newListItem.innerHTML = 'New List Item' + " " + counter++;
     unorderedList.appendChild(newListItem);
 })
+
+
+
+
