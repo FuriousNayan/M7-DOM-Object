@@ -34,7 +34,14 @@ divOne.appendChild(buttonOne);
 buttonOne.addEventListener('click', function() {
     let newListItem = document.createElement('li');
     newListItem.innerHTML = 'New List Item' + " " + counter++;
+    newListItem.style.color = '#' + Math.floor(Math.random() * 15848365).toString(16);
     unorderedList.appendChild(newListItem);
+
+})
+
+divOne.addEventListener('click', function(){
+    divOne.style.backgroundColor = '#' + Math.floor(Math.random() * 15848365).toString(16)
+
 })
 
 
